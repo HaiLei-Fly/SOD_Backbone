@@ -13,6 +13,7 @@ model_urls = {
 }
 
 class ResNet(nn.Module):
+    
     def __init__(self, name="resnet50", pretrain=True):
         super().__init__()
 
