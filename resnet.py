@@ -48,6 +48,6 @@ class ResNet(nn.Module):
         C5 = self.stage5(C4)
 
         # up2 --> 1/2
-        C1 = self.up2(C1)
+        C1 = self.up2(C1) 
 
         return C1, C2, C3, C4, C5
