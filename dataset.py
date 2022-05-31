@@ -175,7 +175,7 @@ class PreDataloader(Dataset):
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         img = img.astype('float32')
 
-        # Pad images to target size
+        
         img_np = pad_resize_image(img, None, self.target_size)
         img_tor = img_np / 255.0
         img_tor = np.transpose(img_tor, axes=(2, 0, 1))
